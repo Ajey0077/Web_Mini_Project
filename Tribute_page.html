@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Tribute</title>
+
+    <style>
+      :root {
+        --cell: 10px;
+      }
+      #main {
+        margin: auto;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        max-width: 800px;
+        background-image: linear-gradient(
+            to bottom,
+            transparent 50%,
+            #faf9e1 97%
+          ),
+          linear-gradient(to right, #f0efe9 97%, #faf9e1 50%);
+        background-size: var(--cell) var(--cell), var(--cell) var(--cell);
+        font-size: 1.4em;
+        line-height: 1.3em;
+      }
+
+      #image {
+        display: block;
+        align: center;
+        width: 850px;
+        height: 400px;
+        max-width: 100%;
+        height: auto;
+      }
+
+      #quote-list {
+        list-style-type: none;
+      }
+
+      .blockquote-footer {
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+        font-size: 0.875em;
+        color: #6c757d;
+      }
+
+      .blockquote {
+        margin-bottom: 1rem;
+        font-size: 1.25rem;
+        margin: 0 0 1rem;
+      }
+
+      .blockquote-footer:before {
+        content: "--";
+      }
+
+      @media only screen and (min-width: 300px) {
+        #timeline-list li {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-column-gap: 30px;
+          margin-top: 10px;
+          align-items: start;
+        }
+        #timeline-list li time {
+          margin-bottom: 10px;
+          margin-bottom: 10px;
+        }
+
+        #timeline-list li p {
+          margin-left: 10px;
+        }
+      }
+
+      @media only screen and (min-width: 800px) {
+        #timeline-list li {
+          display: grid;
+          grid-template-columns: auto 1fr;
+          grid-column-gap: 30px;
+          margin-top: 10px;
+          align-items: start;
+        }
+
+        #timeline-list li time {
+          display: block;
+          text-align: right;
+          min-width: 80px;
+        }
+      }
+
+      #timeline-list li p {
+        margin-top: 0px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main id="main">
+      <h1 id="title">Srinivasa Ramanujan</h1>
+
+      <figure id="img-div">
+        <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Srinivasa_Ramanujan_-_OPC_-_1.jpg/330px-Srinivasa_Ramanujan_-_OPC_-_1.jpg" alt="picture of srinivasa ramanujan" />
+        <figcaption id="img-caption"></figcaption>Srinivasa Ramanujan (1887-1920)
+      </figure>
+
+      <section id="tribute-info">
+        <h2>About</h2>
+
+        <p>
+          <strong>Srinivasa Ramanujan</strong>
+          (<time datetim="1941-09-09">22 December, 1887</time> –
+          <time datetime="2011-10-12">26 April, 1920</time>) was an Indian Mathematician.
+        </p>
+
+        <p>
+          In mathematics there is a distinction between insight and formulating or working through a proof. Ramanujan proposed an abundance of formulae that could be investigated later in depth. G. H. Hardy said that Ramanujan's discoveries are unusually rich and that there is often more to them than initially meets the eye. As a byproduct of his work, new directions of research were opened up. Examples of the most intriguing of these formulae include infinite series for π, one of which is given below:</p>
+<p>
+Ramanujan's series for π converges extraordinarily rapidly and forms the basis of some of the fastest algorithms currently used to calculate π. Truncating the sum to the first term also gives the approximation 
+          
+ for π, which is correct to six decimal places; truncating it to the first two terms gives a value correct to 14 decimal places. See also the more general Ramanujan–Sato series.
+
+One of Ramanujan's remarkable capabilities was the rapid solution of problems, illustrated by the following anecdote about an incident in which P. C. Mahalanobis posed a problem:
+
+Imagine that you are on a street with houses marked 1 through n. There is a house in between (x) such that the sum of the house numbers to the left of it equals the sum of the house numbers to its right. If n is between 50 and 500, what are n and x?' This is a bivariate problem with multiple solutions. Ramanujan thought about it and gave the answer with a twist: He gave a continued fraction. The unusual part was that it was the solution to the whole class of problems. Mahalanobis was astounded and asked how he did it. 'It is simple. The minute I heard the problem, I knew that the answer was a continued fraction. Which continued fraction, I asked myself. Then the answer came to my mind', Ramanujan replied."[69][70]</p>
+<p>
+His intuition also led him to derive some previously unknown identities, such as
+
+In 1918 Hardy and Ramanujan studied the partition function P(n) extensively. They gave a non-convergent asymptotic series that permits exact computation of the number of partitions of an integer. In 1937 Hans Rademacher refined their formula to find an exact convergent series solution to this problem. Ramanujan and Hardy's work in this area gave rise to a powerful new method for finding asymptotic formulae called the circle method.[71]
+
+In the last year of his life, Ramanujan discovered mock theta functions.[72] For many years these functions were a mystery, but they are now known to be the holomorphic parts of harmonic weak Maass forms.
+        </p>
+
+        <p>
+          Learn more about him in
+          <a
+            href="https://en.wikipedia.org/wiki/Srinivasa_Ramanujan"
+            id="tribute-link"
+            target="_blank"
+          >
+            this Wiki article.
+          </a>
+        </p>
+
+      </section>
+      
+      
+<section>
+  <h1>Ramanujan’s contributions to mathematics</h1>
+  <ul>
+    
+<li>Ramanujan compiled around 3,900 results consisting of equations and identities. One of his most treasured findings was his infinite series for pi. This series forms the basis of many algorithms we use today. He gave several fascinating formulas to calculate the digits of pi in many unconventional ways.</li>
+<li>    
+He discovered a long list of new ideas to solve many challenging mathematical problems, which gave a significant impetus to the development of game theory. His contribution to game theory is purely based on intuition and natural talent and remains unrivalled to this day.</li>
+<li>    
+He elaborately described the mock theta function, which is a concept in the realm of modular form in mathematics. Considered an enigma till sometime back, it is now recognized as holomorphic parts of mass forms.</li>
+<li>
+One of Ramanujan’s notebooks was discovered by George Andrews in 1976 in the library at Trinity College. Later the contents of this notebook were published as a book.</li>
+<li>
+1729 is known as the Ramanujan number. It is the sum of the cubes of two numbers 10 and 9. For instance, 1729 results from adding 1000 (the cube of 10) and 729 (the cube of 9). This is the smallest number that can be expressed in two different ways as it is the sum of these two cubes. Interestingly, 1729 is a natural number following 1728 and preceding 1730.</li>
+<li>
+Ramanujan’s contributions stretch across mathematics fields, including complex analysis, number theory, infinite series, and continued fractions.</li>
+    
+  </ul>
+</section>
+
+    </main>
+    <script>
+      // only include FCC test scripts if needed
+      if (window.location.toString().includes("?test=true")) {
+        let js = document.createElement("script");
+        js.src =
+          "https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js";
+        document.body.appendChild(js);
+      }
+    </script>
+  </body>
+</html>
